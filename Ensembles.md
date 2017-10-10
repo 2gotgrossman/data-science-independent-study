@@ -5,6 +5,15 @@ while all the classifiers taken together are a “strong learner”.
 
  
  Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to *decrease variance (bagging), bias (boosting), or improve predictions (stacking)*.
+ 
+ ### Stacking
+1. Split the training set into two disjoint sets.
+2. Train several base learners on the first part.
+3. Test the base learners on the second part.
+4. Using the predictions from 3) as the inputs, and the correct responses as the outputs, train a higher level learner.
+
+
+![alt-text](https://i.stack.imgur.com/RFfqb.png)
 
 ` Ensembling. Train 10 neural networks and average their predictions. It’s a fairly trivial technique that results in easy, sizeable performance improvements.
 
